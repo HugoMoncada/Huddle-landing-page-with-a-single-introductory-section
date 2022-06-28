@@ -146,14 +146,13 @@ footer{
         width: 90%;
     }
 
-   
-
     main{
         max-width: 100%;
+        padding: 35px 0;
     }
 
     .logo img{
-        width: 160px;
+        width: 190px;
     }
     
     .content{
