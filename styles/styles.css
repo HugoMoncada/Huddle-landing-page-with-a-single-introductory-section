@@ -1,0 +1,207 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+body{
+    background-color: var(--Violet);
+    background-image: url("/images/bg-mobile.svg");
+    background-size: contain;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 0;
+    max-width: 375px;
+}
+
+.logo{
+    margin-bottom: auto;
+}
+
+.logo img{
+    width: 140px;
+}
+
+
+.illustration{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text{
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+button{
+    border-radius: 500px;
+    width: 75%;
+    border: none;
+    padding: 15px 11px;
+    align-self: center;
+    background-color: white;
+    color: var(--Violet);
+    -webkit-box-shadow: 0px 7px 28px -10px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 7px 28px -10px rgba(0,0,0,1);
+    box-shadow: 0px 7px 28px -10px rgba(0,0,0,1);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social__icon{
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social__icon:hover{
+    cursor: pointer;
+}
+
+.social__icon i{
+    color: white;
+    font-size: 19px;
+}
+
+
+
+
+
+
+/* Large devices (laptops/desktops, 800px and up) */
+@media only screen and (min-width: 800px) {
+    body{
+        background-image: url("/images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Large devices (laptops/desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    
+    .container{
+        width: 90%;
+    }
+
+   
+
+    main{
+        max-width: 100%;
+    }
+
+    .logo img{
+        width: 160px;
+    }
+    
+    .content{
+        display: flex;
+        gap: 3.2rem;
+    }
+
+    .illustration{
+        width: 50%;
+        margin-bottom: 0;
+    }
+    
+    .content__text{
+        align-items: flex-start;
+        width: 50%;
+        max-width: 520px;
+        justify-content: flex-start;
+    }
+
+    .title{
+        text-align: left;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 17px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    
+    .text{
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    button{
+        width: 40%;
+        align-self: flex-start;
+    }
+
+
+    footer{
+        justify-content: flex-end;
+    }
+
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .container{
+        width: 80%;
+    }
+}
